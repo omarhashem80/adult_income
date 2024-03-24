@@ -33,6 +33,10 @@ Based on the insights gained from the analysis, the project provides actionable 
 6. Exploring job opportunities abroad.
 7. Building a strong professional network and seeking mentorship.
 8. Continuously learning and adapting to industry trends.
+9. 
+## Streamlit App
+
+To interactively explore the analysis and recommendations, you can access the Streamlit web application [here](link-to-streamlit-app).
 
 ## Project Structure
 
