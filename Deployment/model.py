@@ -24,8 +24,8 @@ def update_marital_status_options(relationship):
 
 def predictor(input_data):
     # Load the preprocessor and classifier
-    preprocessor = load('/assets/preprocessor.joblib')
-    classifier = load('/assets/classifier.joblib')
+    preprocessor = load('/preprocessor.joblib')
+    classifier = load('/classifier.joblib')
 
     # Transform input data and make prediction
     input_df = pd.DataFrame(input_data, index=[0])
