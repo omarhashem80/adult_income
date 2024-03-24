@@ -39,9 +39,9 @@ def eda():
         st.plotly_chart(px.imshow(df[nums+['income']].corr(numeric_only=True),text_auto='.2f',width=1000, height=800))
         
         
-        fig = px.scatter(df, x='age', y='hours-per-week', trendline='ols', title='Relationship between Age and Hours Worked Per Week')
-        fig.update_traces(marker=dict(size=8, opacity=0.5))
-        st.plotly_chart(fig)
+        # fig = px.scatter(df, x='age', y='hours-per-week', trendline='ols', title='Relationship between Age and Hours Worked Per Week')
+        # fig.update_traces(marker=dict(size=8, opacity=0.5))
+        # st.plotly_chart(fig)
   
             
         st.subheader('Categorical vs Numerical Analysis')
