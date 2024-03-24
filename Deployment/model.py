@@ -8,7 +8,8 @@ from helper import df
 
 def update_workclass_options(age):
     classes = df[df['age'] == age]['workclass'].unique().tolist()
-    classes.remove('nan')
+    if 'nan' in classes:
+        classes.remove('nan')
     return df[df['age'] == age]['workclass'].unique().tolist()
 
 # Function to update occupation options based on age and education
