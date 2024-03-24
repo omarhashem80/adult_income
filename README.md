@@ -36,7 +36,6 @@ Based on the insights gained from the analysis, the project provides actionable 
 
 ## Project Structure
 
-- `notebooks/`: Jupyter notebooks containing the data analysis and visualization process.
 - `assets/`: Includes any additional assets such as pre-trained models or processed data.
 - `README.md`: Documentation providing an overview of the project, analysis, and recommendations.
 - `requirements.txt`: Lists the dependencies required to run the project.
