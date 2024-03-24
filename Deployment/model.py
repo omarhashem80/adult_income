@@ -7,7 +7,7 @@ from helper import df
 
 
 def update_workclass_options(age):
-    classes = df[df['age'] == age]['workclass'].unique().tolist()
+    classes = df[df['age'] == age]['workclass'].dropna().unique().tolist()
     if 'nan' in classes:
         classes.remove('nan')
     return classes 
