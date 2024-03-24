@@ -1,0 +1,3 @@
+scikit-learn==1.2.2
+category-encoders==2.6.3
+catboost
