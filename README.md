@@ -42,7 +42,7 @@ To interactively explore the analysis and recommendations, you can access the St
 
 - `Deployment/`: Includes any additional assets such as pre-trained models or processed data.
 - `README.md`: Documentation providing an overview of the project, analysis, and recommendations.
-- `requirements.txt`: Lists the dependencies required to run the project.
+- `Deployment/requirements.txt`: Lists the dependencies required to run the project.
 
 ## Getting Started
 
