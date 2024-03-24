@@ -55,7 +55,3 @@ To replicate the analysis and explore the recommendations:
 
 - [Omar Hashem](https://github.com/omarhashem80)
 
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
