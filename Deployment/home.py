@@ -10,7 +10,7 @@ page = st.sidebar.radio('Pages', ['Home', 'Analysis', 'Model', 'Conclusion'])
 def home():
 
     st.subheader('This app is created to analyze the Adult Income dataset and predict income.')
-    st.image('/assets/cover.png', caption='Adult income')
+    st.image('cover.png', caption='Adult income')
     st.text('''
     This dataset contains information on individuals' income, including their age,
     workclass, education, marital status, occupation, race, sex, capital gain,
