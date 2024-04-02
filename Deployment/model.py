@@ -93,7 +93,7 @@ def model():
     ), max_value=df['hours-per-week'].max(), step=1, key=f"Hours_per_Week")
     input_data['hours-per-week'] = hours_per_week
 
-    native_country_options = df['native-country'].unique().tolist()
+    native_country_options = df['native-country']dropna().unique().tolist()
     native_country = st.selectbox(
         "Native Country", native_country_options, key=f"Native_Country")
     input_data['native-country'] = native_country
