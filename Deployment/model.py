@@ -107,8 +107,8 @@ def model():
         "Capital Loss", min_value=0, max_value=100000, step=100, key=f"Capital_Loss")
     input_data['Net_Capital_Change'] = capital_gain - capital_loss
 
-    fnlwgt = st.number_input("fnlwgt", min_value=1000,
-                             max_value=100000, step=100, key=f"fnlwgt")
+    fnlwgt = st.number_input("fnlwgt", min_value=df.fnlwgt.min(),
+                             max_value=df.fnlwgt.max(), step=100, key=f"fnlwgt")
     input_data['fnlwgt'] = fnlwgt
 
     if st.button("Predict"):
