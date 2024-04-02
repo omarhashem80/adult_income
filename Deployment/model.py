@@ -95,7 +95,7 @@ def model():
     ), max_value=df['hours-per-week'].max(), step=1, key=f"Hours_per_Week")
     input_data['hours-per-week'] = hours_per_week
 
-    native_country_options = df['native-country']dropna().unique().tolist()
+    native_country_options = df['native-country'].dropna().unique().tolist()
     native_country = st.selectbox(
         "Native Country", native_country_options, key=f"Native_Country")
     input_data['native-country'] = native_country
@@ -107,7 +107,7 @@ def model():
         "Capital Loss", min_value=0, max_value=100000, step=100, key=f"Capital_Loss")
     input_data['Net_Capital_Change'] = capital_gain - capital_loss
 
-    fnlwgt = st.number_input("fnlwgt", min_value=0,
+    fnlwgt = st.number_input("fnlwgt", min_value=1000,
                              max_value=100000, step=100, key=f"fnlwgt")
     input_data['fnlwgt'] = fnlwgt
 
