@@ -49,7 +49,7 @@ To replicate the analysis and explore the recommendations:
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies listed in `requirements.txt`.
-3. Explore the Jupyter notebooks in the `notebooks/` directory to understand the analysis process.
+3. Explore the Jupyter notebooks in the `Notebooks/` directory to understand the analysis process.
 4. Run the notebooks to replicate the analysis or modify them as needed.
 5. Refer to the `README.md` for detailed documentation and insights derived from the analysis.
 
