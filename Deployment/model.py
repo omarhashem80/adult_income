@@ -6,7 +6,7 @@ from helper import df
 # Function to update workclass options based on age
 
 
-def update_workclass_options(age, df):
+def update_workclass_options(age):
     age_range = 5
     filtered_df = df[(df['age'] <= age + age_range) & (df['age'] >= age - age_range)]
     classes = filtered_df['workclass'].dropna().unique().tolist()
