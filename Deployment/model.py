@@ -6,11 +6,13 @@ from helper import df
 # Function to update workclass options based on age
 
 
-def update_workclass_options(age):
-    classes = df[df['age'] == age]['workclass'].dropna().unique().tolist()
-    if 'nan' in classes:
-        classes.remove('nan')
-    return classes 
+def update_workclass_options(age, df):
+    age_range = 5
+    filtered_df = df[(df['age'] <= age + age_range) & (df['age'] >= age - age_range)]
+    classes = filtered_df['workclass'].dropna().unique().tolist()
+    classes = [cls for cls in classes if cls != 'nan']
+    return classes
+
 
 # Function to update occupation options based on age and education
 
